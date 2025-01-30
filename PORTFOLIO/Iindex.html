@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saikrishna Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c8597d2bb0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+       
+        <div class="container">
+            <nav>
+                <img src="/images/logo.jpg" alt="Logo" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Internships</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Hi, I'm <span>Saikrishna</span></h1>
+                <p>from India</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/sai_photo.jpg" alt="Saikrishna Photo">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am Sai Krishna Katta, a dedicated software developer with expertise in Java, HTML, CSS, JavaScript, and SQL. I hold a Master of Computer Applications (CGPA: 8.19) and have worked on projects like Comparative Analysis of Liver Diseases and a Staff Management System.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('hobbies')">Hobbies</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing web/App interfaces</li>
+                            <li><span>Web Development</span><br>Developing responsive and dynamic websites using HTML, CSS, JavaScript, and SQL.</li>
+                            <li><span>Java Full Stack Development</span><br>Skilled in building end-to-end applications with Java and full-stack technologies.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2024</span><br>Java FullStack Training at Codegnan</li>
+                            <li><span>2024</span><br>Master of Computer Applications (MCA) from Swarnandhra College of Engineering and Technology</li>
+                            <li><span>2022</span><br>Bachelor of Science (BSc) from Sri Y.N.College</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="hobbies">
+                        <ul>
+                            <li><span>Reading Books</span></li>
+                            <li><span>Playing Games</span></li>
+                            <li><span>Listening to Music</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Internships Section -->
+    <section id="services">
+        <div class="container">
+            <h1 class="sub-title">Internships</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-house"></i>
+                    <p>Blue Prism Intelligent Automation Virtual Internship</p>
+                    <a href="#"> | April 2024 – June 2024</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-user"></i>
+                    <p>Zero Trust Cloud Security Virtual Internship</p>
+                    <a href="#"> | January 2024 – March 2024</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <p>AI-ML Virtual Internship</p>
+                    <a href="#"> | September 2023 – November 2023</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/Screenshot 2025-01-03 165026.png" alt="Liver Disease Project">
+                    <div class="layer">
+                        <h2>Comparative Analysis Of Liver Diseases Using Machine Learning Techniques</h2>
+                        <ul>
+                            <li>Many persons are suffering from liver disease, but they don’t know it. The identification of liver diseases in the early stage helps a patient get better treatment.</li>
+                            <li>If it is not diagnosed earlier, it may lead to various health issues. To solve these issues, physicians need to examine whether the patient has been affected by liver disease or not based on multiple parameters.</li>
+                            <li>In this project, we classify the patients who have liver disease or not by using different machine learning algorithms and comparing the performance factors to predict the better result.</li>
+                            <li>The liver dataset is retrieved from the Kaggle dataset.</li>
+                        </ul>
+                        <a href="https://github.com/sai-krishna-katta/Comparative-Analysis-of-Liver-diseases-by-using-Machine-Learning-Techniques.git">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/skkkkkk.png" alt="Staff Management System">
+                    <div class="layer">
+                        <h1>Staff Management System</h1>
+                        <ul>
+                            <li>Staff management system is an application-based system, having two applications developed, one for employers to manage staff details and another for staff to mark their attendance.</li>
+                            <li>Every organisation, whether government or private, uses an information system to store data of their staff. However, in India, it is found that many small-scale industries use pen and paper to keep a record.</li>
+                            <li>This paper discusses making a system for solving problems for them at a cheaper cost. This system will mark attendance of each employee and calculate the salary of them at the end of the month.</li>
+                            <li>It also calculates overtime and total working hours of each employee. As in small scale, each company has its own holidays preference and variable week off for staff, so all this power is given to the employer to manage holidays and weekdays of each staff separately.</li>
+                        </ul>
+                        <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications">
+        <div class="container">
+            <h1 class="sub-title">Certifications</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/Screenshot 2024-12-19 140535.png" alt="Java Certificate">
+                    <div class="layer">
+                        <h3>Java Certificate</h3>
+                        <p>This Certificate is Presented To Sai Krishna Katta for Successfully completed all the requirements stipulated by Intellipaat for Java Complete Course.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/Screenshot 2024-12-19 141513.png" alt="Java Certificate">
+                    <div class="layer">
+                        <h3>Java Certificate</h3>
+                        <p>This Certificate is Presented To Sai Krishna Katta for Successfully completed all the requirements stipulated by Intellipaat for Java Complete Course.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/Screenshot 2024-12-19 123201.png" alt="Python Certificate">
+                    <div class="layer">
+                        <h3>Certificate for the Completion of Python</h3>
+                        <p>This is to certify that KATTA SAI KRISHNA has successfully completed Python 3.4.3 test organized at Swarnandhra College of Engineering & Technology.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/Screenshot 2024-12-19 124021.png" alt="HackerRank SQL Certificate">
+                    <div class="layer">
+                        <h3>HackerRank Certificate</h3>
+                        <p>This is to certify that Sai Krishna Katta has successfully cleared the assessment for SQL.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/Screenshot 2025-01-30 165515.png" alt="HackerRank Java Certificate">
+                    <div class="layer">
+                        <h3>HackerRank Certificate</h3>
+                        <p>This is to certify that Sai Krishna Katta has successfully cleared the assessment for Java.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> saikrishnakatta276@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 6300125767</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/sai-krishna-katta-6a63a2275/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/sai_krishna64/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://github.com/sai-krishna-katta"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="images/Saikrishna_katta-CodegnanDestination.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © SK. Made with <i class="fa-solid fa-heart"></i> by SK Groups</p>
+        </div>
+    </section>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+        var sidemeu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemeu.style.right = "0";
+        }
+        function closemenu() {
+            sidemeu.style.right = "-200px";
+        }
+
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyn3ouEbAbVMYXow1D1IyGK029RW1sf88wHB1mXk3_NSWgRBG8XWIi2A_ufrZVKD3S_/exec';
+        const form = document.forms['submit-to-google-sheet'];
+        const msg = document.getElementById("msg");
+
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully";
+                    setTimeout(function () {
+                        msg.innerHTML = "";
+                    }, 5000);
+                    form.reset();
+                })
+                .catch(error => console.error('Error!', error.message));
+        });
+    </script>
+</body>
+</html>
