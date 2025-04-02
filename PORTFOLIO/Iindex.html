@@ -6,13 +6,250 @@
     <title>Saikrishna Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/c8597d2bb0.js" crossorigin="anonymous"></script>
+
+
+    <!-- Add this CSS to your <style> tag or style.css file -->
+<style>
+    /* ===== About Section Background ===== */
+    #about {
+        position: relative;
+        padding: 80px 0;
+        background: 
+            /* Dark overlay for readability */
+            linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
+            /* Your background image */
+            url('images/deep1.jpg') no-repeat center center/cover;
+        color: #fff;
+        overflow: hidden;
+        z-index: 1;
+    }
+
+    /* Subtle pattern overlay */
+    #about::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect fill="%23ff004f" width="1" height="1" x="50" opacity="0.1"/></svg>');
+        opacity: 0.15;
+        z-index: -1;
+    }
+
+    /* Ensure content stays above background */
+    #about .container {
+        position: relative;
+        z-index: 2;
+    }
+
+    /* Mobile responsiveness */
+    @media (max-width: 768px) {
+        #about {
+            background-attachment: scroll;
+        }
+        .about-col-1, .about-col-2 {
+            padding: 0 15px;
+        }
+    }
+</style>
+
+
+    <style>
+        /* ===== NEW BACKGROUND STYLES ===== */
+        #header {
+            width: 100%;
+            height: 100vh;
+            background: 
+                /* Dark overlay for better text contrast */
+                linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                /* Your background image */
+                url('images/Deep2.jpg') no-repeat center center/cover;
+            position: relative;
+            overflow: hidden;
+            animation: fadeIn 1s ease-in;
+        }
+
+        /* Optional: Add subtle animated particles */
+        #header::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><circle cx="20" cy="20" r="0.8" fill="rgba(255,255,255,0.1)"/><circle cx="80" cy="50" r="0.8" fill="rgba(255,255,255,0.1)"/><circle cx="50" cy="80" r="0.8" fill="rgba(255,255,255,0.1)"/></svg>');
+            opacity: 0.4;
+            z-index: 0;
+        }
+
+        /* Ensure content stays above background */
+        .container, .header-text {
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Animation for smooth loading */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            #header {
+                background-attachment: scroll; /* Disable parallax on mobile */
+            }
+            .header-text {
+                margin-top: 50%; /* Adjust text position */
+            }
+        }
+    </style>
+
+
+<style>
+    /* ===== Certifications Section with Background ===== */
+    #certifications {
+      padding: 80px 0;
+      position: relative;
+      background: 
+        linear-gradient(rgba(8, 8, 8, 0.9), rgba(8, 8, 8, 0.9)),
+        url('images/deep4.avif') center/cover fixed;
+      color: #fff;
+      overflow: hidden;
+      z-index: 1;
+    }
+  
+    #certifications::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: 
+        radial-gradient(circle, rgba(255,0,79,0.1) 0%, transparent 70%),
+        linear-gradient(135deg, rgba(8,8,8,0.95) 0%, rgba(26,26,46,0.95) 100%);
+      z-index: -1;
+    }
+  
+    .cert-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+  
+    .cert-card {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(10px);
+      border-radius: 15px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 0, 79, 0.3);
+      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    }
+  
+    .cert-card:hover {
+      transform: translateY(-10px);
+      border-color: #ff004f;
+      box-shadow: 0 12px 40px rgba(255, 0, 79, 0.3);
+    }
+  
+    .cert-img-container {
+      height: 200px;
+      overflow: hidden;
+      position: relative;
+      border-bottom: 2px solid #ff004f;
+    }
+  
+    .cert-img-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.8s ease;
+    }
+  
+    .cert-card:hover .cert-img-container img {
+      transform: scale(1.1);
+    }
+  
+    .cert-details {
+      padding: 20px;
+    }
+  
+    .cert-details h3 {
+      color: #fff;
+      margin-bottom: 12px;
+      font-size: 1.3rem;
+      position: relative;
+      display: inline-block;
+    }
+  
+    .cert-details h3::after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 50px;
+      height: 2px;
+      background: #ff004f;
+    }
+  
+    .cert-details p {
+      color: #d1d1d1;
+      font-size: 0.95rem;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+  
+    .cert-link {
+      display: inline-flex;
+      align-items: center;
+      color: #ff004f;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+  
+    .cert-link i {
+      margin-left: 8px;
+      transition: transform 0.3s ease;
+    }
+  
+    .cert-link:hover {
+      color: #fff;
+    }
+  
+    .cert-link:hover i {
+      transform: translateX(5px);
+    }
+  
+    /* Mobile Responsiveness */
+    @media (max-width: 768px) {
+      #certifications {
+        background-attachment: scroll;
+        padding: 60px 0;
+      }
+      
+      .cert-container {
+        grid-template-columns: 1fr;
+      }
+      
+      .cert-img-container {
+        height: 180px;
+      }
+    }
+  </style>
+
+
 </head>
 <body>
     <div id="header">
        
         <div class="container">
             <nav>
-                <img src="/images/logo.jpg" alt="Logo" class="logo">
+                <!-- <img src="/images/logo.jpg" alt="Logo" class="logo"> -->
                 <ul id="sidemenu">
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
@@ -185,6 +422,68 @@
     </section>
 
     <!-- Contact Section -->
+
+
+    <!-- <style>
+        /* ===== Contact Section with Background Image ===== */
+        #contact {
+          padding: 80px 0;
+          position: relative;
+          background: 
+            /* Dark overlay for readability */
+            linear-gradient(rgba(8, 8, 8, 0.85), rgba(8, 8, 8, 0.85)),
+            /* Background image */
+            url('images/deep4.av') center/cover no-repeat;
+          color: #fff;
+          overflow: hidden;
+        }
+      
+        /* Subtle tech pattern overlay */
+        #contact::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: 
+            url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M0 0 L100 100" stroke="rgba(255,0,79,0.1)" stroke-width="0.5"/><path d="M0 100 L100 0" stroke="rgba(255,0,79,0.1)" stroke-width="0.5"/></svg>');
+          opacity: 0.15;
+        }
+      
+        /* Ensure content stays above background */
+        .container {
+          position: relative;
+          z-index: 2;
+        }
+      
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+          #contact {
+            background-attachment: scroll;
+            padding: 60px 0;
+          }
+          
+          .row {
+            flex-direction: column;
+          }
+          
+          .contact-left, 
+          .contact-right {
+            margin-bottom: 30px;
+          }
+        }
+      </style>
+       -->
+
+
+
+
+
+
+
+
+
     <section id="contact">
         <div class="container">
             <div class="row">
@@ -211,7 +510,7 @@
             </div>
         </div>
         <div class="copyright">
-            <p>Copyright © SK. Made with <i class="fa-solid fa-heart"></i> by SK Groups</p>
+            <p>Copyright © SK. <i class="fa-solid fa-heart"></i></p>
         </div>
     </section>
 
